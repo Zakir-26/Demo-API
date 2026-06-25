@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h1 class="main_heading">Welcome to <span class="main-demo">Demo API.</span></h1>
+
+<div class="main-page-buttons">
+
+    <a href="{% url 'studapi' %}">
+        <button type="button" class="btn btn-primary main-buttons">GET Students API</button>
+    </a>
+
+    <br>
+    <br>
+
+    <a href="{% url 'add' %}">
+        <button type="button" class="btn btn-primary main-buttons">Add new Student</button>
+    </a>
+
+
+</div>
+
+{% endblock %}

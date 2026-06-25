@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+<h1 class="form-heading">Add a new Student</h1>
+
+{% if messages %}
+
+    <li> {{messages}} </li>
+    
+{% endif %}
+
+<form method="POST">
+
+{% csrf_token %}
+
+{{ form|crispy }}
+
+<button class=" btn btn-primary submit" type="submit">Submit</button>
+</form>
+
+{% endblock %}

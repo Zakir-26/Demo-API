@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_heading {
+    font-size: 78px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 42px;
+
+}
+
+.main-page-buttons {
+    text-align: center;
+    padding-top: 42px;
+}
+
+
+.main-demo {
+    display: block;
+    color: crimson;
+    font-size: 54px;
+    text-align: left;
+    position: absolute;
+    left: 37%;
+
+}
+
+.main-buttons {
+    font-size: 20px;
+}
+
+.main-buttons:hover {
+    font-size: 22px;
+    background-color: rgb(80, 80, 159);
+
+}
+
+.form-heading {
+    color: crimson;
+    text-align: center;
+}
+
+form {
+    padding: 22px;
+    width: 50%;
+    
+}
+
+.submit {
+    font-size: 22px;
+
+}
+.submit:hover {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: aliceblue;
+    color:black;
+
+}
+
+@media (max-width:650px) {
+    form {
+        width: 70%;
+    }
+
+}
+
