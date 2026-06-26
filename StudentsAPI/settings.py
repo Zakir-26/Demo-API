@@ -144,11 +144,6 @@ GITHUB_CLIENT_ID = 'os.getenv("GITHUB_CLIENT_ID")'
 GITHUB_CLIENT_SECRET = 'os.getenv("GITHUB_CLIENT_SECRET")'
 SECRET_KEY = 'os.getenv("SECRET_KEY")'
 
-print(os.getenv("GOOGLE_CLIENT_ID"))
-
-print(os.getenv("GITHUB_CLIENT_ID"))
-
-
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
@@ -170,7 +165,8 @@ SOCIALACCOUNT_PROVIDERS = {
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 ALLAUTH_UI_THEME = "light"
 
